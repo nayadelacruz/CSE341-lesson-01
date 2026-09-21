@@ -1,0 +1,8 @@
+### Test home route
+GET http://localhost:3000/
+
+### Get all contacts
+GET http://localhost:3000/allContacts
+
+### Get one contact
+GET http://localhost:3000/oneContact/6aad6f89f2d3ed1e4e39f3a7
