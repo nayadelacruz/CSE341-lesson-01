@@ -1,8 +1,35 @@
 ### Test home route
-GET http://localhost:3000/
+GET http://localhost:8080/
 
 ### Get all contacts
-GET http://localhost:3000/allContacts
+GET http://localhost:8080/contacts
 
 ### Get one contact
-GET http://localhost:3000/oneContact/6aad6f89f2d3ed1e4e39f3a7
+GET http://localhost:8080/contacts/6aad6f89f2d3ed1e4e39f3a7
+
+### Create contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+    "firstName": "Victoria",
+    "lastName": "Aguilar",
+    "email": "victoria@example.com",
+    "favoriteColor": "Purple",
+    "birthday": "2021-02-05"
+}
+
+### Update Contact
+PUT http://localhost:8080/contacts/6aad6f89f2d3ed1e4e39f3a7
+Content-Type: application/json
+
+{
+    "firstName": "Nefi",
+    "lastName": "Aguilar",
+    "email": "updated2@example.com",
+    "favoriteColor": "green",
+    "birthday": "1995-01-01"
+}
+
+### Delete one contact
+DELETE http://localhost:8080/contacts/6aad6f89f2d3ed1e4e39f3a7
