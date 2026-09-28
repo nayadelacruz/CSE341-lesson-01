@@ -82,7 +82,7 @@ export async function updateContactController(req, res) {
       birthday,
     );
 
-    res.status(200).json("Update Successful");
+    res.status(204).json("Update Successful");
   } catch (error) {
     console.error(`There was an error updating the contact ${id}`, error);
     res.status(500).json({
