@@ -26,10 +26,10 @@ Content-Type: application/json
 {
     "firstName": "Nefi",
     "lastName": "Aguilar",
-    "email": "updated2@example.com",
+    "email": "updated3@example.com",
     "favoriteColor": "green",
     "birthday": "1995-01-01"
 }
 
 ### Delete one contact
-DELETE http://localhost:8080/contacts/6aad6f89f2d3ed1e4e39f3a7
+DELETE http://localhost:8080/contacts/6aba99b989e5ae0bf46f649d
